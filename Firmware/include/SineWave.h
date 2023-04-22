@@ -3,9 +3,9 @@
 #include "SD.h"
 #include "midiusb.h"
 
-#define FREQUENCY 45
+#define FREQUENCY 40
 #define AMPLITUDE_DIVIDER 1
-#define DEFINITION 16
+#define DEFINITION 12
 
 MIDIusb MidiDevice;
 const int btn = 0;

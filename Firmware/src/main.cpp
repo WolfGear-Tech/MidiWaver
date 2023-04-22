@@ -7,9 +7,9 @@ void loop(){}
 
 #include <SineWave.h>
 
-#define FREQUENCY 45
+#define FREQUENCY 75
 #define AMPLITUDE_DIVIDER 1
-#define DEFINITION 16
+#define DEFINITION 32
 
 void setup() {
   pinMode(btn, INPUT_PULLUP);
@@ -21,7 +21,7 @@ void loop() {
   btnState = digitalRead(btn);
 
   if((btnState != previousBtnState && btnState == LOW)){
-    
+
     state = !state;
     digitalWrite(LED_BUILTIN, state);
 
